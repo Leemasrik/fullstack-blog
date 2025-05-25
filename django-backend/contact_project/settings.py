@@ -131,9 +131,11 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
-    "https://fullstack-blog-khqc.vercel.app",  # ✅ Correct for Vite-based React frontend
+    "https://fullstack-blog-khqc-h649mu60c-leemasrikarna-gmailcoms-projects.vercel.app",
     "https://fullstack-blog-hy39.onrender.com",
 ]
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
