@@ -1,6 +1,8 @@
+# app/urls.py
+
 from django.urls import path
-from .views import send_contact
+from .views import send_contact  # Make sure this matches your view name
 
 urlpatterns = [
-    path('send/', send_contact, name='send_contact'),
+    path('api/contact/', send_contact, name='send_contact'),
 ]

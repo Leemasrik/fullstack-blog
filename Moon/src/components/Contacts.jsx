@@ -3,6 +3,8 @@ import gallaxy from '../assets/gallaxy.webp';
 import gallaxy2 from '../assets/gallaxy2.webp';
 import gallaxy3 from '../assets/gallaxy3.jpg';
 
+const baseURL = import.meta.env.VITE_BACKEND_URL;
+
 const Contacts = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -12,8 +14,10 @@ const Contacts = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = { name, email, message };
+    console.log('Backend URL:', baseURL);
+
     try {
-      const response = await fetch('http://localhost:8000/contact/send/', {
+      const response = await fetch(`${baseURL}/api/contact/`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

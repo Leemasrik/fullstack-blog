@@ -2,7 +2,7 @@
 import React from 'react';
 import RotatingCube from '../components/RotatingCube';
 import { motion } from 'framer-motion';
-import MoonTrail from './MoonTrail';
+import MoonTrail from './moonTrail';
 import gallaxy3 from '../assets/gallaxy3.jpg'
 
 const About = () => {
