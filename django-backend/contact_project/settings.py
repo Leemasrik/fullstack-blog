@@ -131,7 +131,7 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # ✅ Correct for Vite-based React frontend
+    "https://fullstack-blog-khqc.vercel.app",  # ✅ Correct for Vite-based React frontend
     "https://fullstack-blog-hy39.onrender.com",
 ]
 
