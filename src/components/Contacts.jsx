@@ -17,7 +17,7 @@ const Contacts = () => {
     console.log('Backend URL:', baseURL);
 
     try {
-      const response = await fetch(`${baseURL}/api/contact/`, {
+      const response = await fetch(`https://fullstack-blog-hy39.onrender.com/api/contact/`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
