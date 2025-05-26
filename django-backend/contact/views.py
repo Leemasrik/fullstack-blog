@@ -20,8 +20,8 @@ def send_contact(request):
                      f"Name: {name}\n"
                      f"Email: {email}\n"
                      f"Message:\n{message}",
-                from_email='your_email@gmail.com',  # Your Gmail here
-                to=['your_email@gmail.com'],         # Your Gmail here
+                from_email='leemasrikarna@gmail.com',  # Your Gmail here
+                to=['leemasrikarna@gmail.com'],         # Your Gmail here
                 reply_to=[email],                    # Now works properly
             )
             email_message.send(fail_silently=False)
